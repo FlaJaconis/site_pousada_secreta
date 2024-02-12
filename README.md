@@ -1,5 +1,5 @@
 # Site Pousada Secreta
-Peojeto acadêmico de uma pousada.
+Projeto acadêmico de uma pousada.
 
 ### Technologias
 --- 
