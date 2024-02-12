@@ -1,0 +1,270 @@
+body {
+    max-width: 1024px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: auto;
+    padding: 0;
+    background-color: #233e49;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    margin: 0 0 2% 0;
+    font-weight: normal;
+}
+
+p{
+    margin: 0 0 2% 0;
+    color: #000000;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+span {
+    color: #2566f1;
+}
+
+.todos-containers {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#links-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 10%;
+    justify-content: space-between;
+    background-color: #ffffff;
+    max-width: 1024px;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+.link-home {
+    font-size: 24px;
+    display: flex;
+    width: 50%;
+    margin: 0 15% 0 0;
+}
+
+.links-secoes {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    width: 30%;
+    padding: 0;
+   
+}
+
+.links-secoes a {
+    color: black;
+    justify-content: right;
+    padding: 0 10%;
+}
+
+.link-topo a{
+    text-align: center;
+}
+
+#conteudo-total {
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.conteudo-total-secoes {
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+#conteudo-total-secoes h2, p {
+    text-align: center;
+}
+
+#pousada-reservada {
+    background-image: url(/assets/img-fundo.jpg);
+    max-width: 1024px;
+    background-size: cover;
+    font-size: 18px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#pousada-reservada-descricao {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 2.5% 2.5%;
+    box-sizing: border-box;
+    margin: auto 0;
+    width: 35%;
+    height: 25%;
+    background-color: #10772f9a;
+    border: solid 1px #ffffff;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+#pousada-reservada-descricao p{
+    color: #ffffff;
+    font-weight: normal;
+}
+
+#pousada-reservada-descricao H2{
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#img-quartos {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 20px 0 0 0;
+    box-sizing: border-box;
+}
+
+#img-quartos a {
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: solid 2px rgb(6, 83, 25);
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.secoes-descricao{
+    padding: 6% 6% 0 6%;
+    background-color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+}
+
+.secoes-descricao h2{
+    font-size: 30px;
+}
+
+.img-quartos {
+    flex-direction: column;
+    max-width: 30%;
+}
+
+.rota {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+.sobre-descricao {
+    display: flex;
+    padding: 3% 0 6% 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sobre-descricao h3, .sobre-descricao p {
+    text-align: left;   
+}
+
+.sobre-descricao h3{
+    font-weight: bold;
+}
+
+.sobre-descricao-linha {
+    display: flex;
+    justify-content: space-between;
+    min-height: 48%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.sobre-descricao-coluna {
+    max-width: 48%;
+}
+
+.sobre-img {
+    min-width: 30%;
+    max-width: 8%;
+    min-height: 100%;
+    margin-left: 2%;
+    object-fit: fill;
+    padding: 0;
+}
+
+#rodape {
+    background-color: #2e7540;
+    padding: 30px 50px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#rodape-contato {
+    display: flex;
+    color: #ffffff;
+    justify-content: space-between;
+    padding-bottom: 1%;
+    border-bottom: 2px solid #044d047c; 
+}
+
+#rodape-contato div {
+    display: flex;
+    align-items: center;
+}
+
+#rodape-contato div a {
+    color: #ffffff;
+    padding: 0 40px 0 20px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+#rodape-contato h3 {
+   font-weight: bold;
+}
+
+#rodape-contato div p {
+    color: #ffffff;
+    padding: 0 40px 0 20px;
+}
+
+#rodape-contato div img {
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+#rodape-copyright{
+    width: 100%;
+    text-align: center;
+    padding: 3% 0;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+#rodape-copyright p {
+    text-align: center;
+    color: #ffffff;
+}
