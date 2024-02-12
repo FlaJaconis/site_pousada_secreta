@@ -1,0 +1,48 @@
+.banner-ilha {
+    background-image: url(/assets/img-fundo.jpg);
+    background-position: center;
+    max-width: 1024px;
+    background-size: cover;
+    font-size: 18px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.div-img-quartos {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 20px 0 0 0;
+    box-sizing: border-box;
+}
+
+.div-img-quartos a {
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: solid 2px rgb(6, 83, 25);
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.img-quartos {
+    flex-direction: column;
+    max-width: 30%;
+}
+.quartos-informacoes{
+    margin: 35px auto 0 auto;
+    width: 100%;
+}
+
+.lista-quartos-informacoes{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0 auto;
+    justify-content: space-between;
+    text-align: left;
+
+}
+
+

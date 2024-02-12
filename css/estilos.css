@@ -29,7 +29,11 @@ a {
     color: #000000;
 }
 
-span {
+span{
+    font-weight: bold;
+}
+
+.span-azul {
     color: #2566f1;
 }
 
@@ -52,6 +56,7 @@ span {
     max-width: 1024px;
     position: fixed;
     box-sizing: border-box;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 .link-home {
@@ -88,6 +93,7 @@ span {
 .conteudo-total-secoes {
     font-weight: normal;
     box-sizing: border-box;
+    padding: 0 0 50px 0;
 }
 
 #conteudo-total-secoes h2, p {
@@ -120,6 +126,7 @@ span {
     font-weight: bold;
 }
 
+
 #pousada-reservada-descricao p{
     color: #ffffff;
     font-weight: normal;
@@ -130,7 +137,7 @@ span {
     font-size: 36px;
 }
 
-#img-quartos {
+.div-img-quartos {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
@@ -138,13 +145,17 @@ span {
     box-sizing: border-box;
 }
 
-#img-quartos a {
+.div-img-quartos a {
     padding: 10px 0;
     text-align: center;
     border-bottom: solid 2px rgb(6, 83, 25);
     font-size: 20px;
     text-transform: uppercase;
     color: #000000;
+}
+.lista-quartos-informacoes{
+    display: flex;
+    flex-direction: column;
 }
 
 .secoes-descricao{
