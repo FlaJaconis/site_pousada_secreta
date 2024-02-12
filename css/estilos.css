@@ -101,7 +101,7 @@ span{
 }
 
 #pousada-reservada {
-    background-image: url(/assets/img-fundo.jpg);
+    background-image: url(img-fundo.jpg);
     max-width: 1024px;
     background-size: cover;
     font-size: 18px;
