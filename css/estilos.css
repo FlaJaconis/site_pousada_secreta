@@ -89,12 +89,11 @@ span{
 }
 
 .conteudo-total-secoes {
+    max-width: 1440px;
+    flex-direction: column;
     font-weight: normal;
     box-sizing: border-box;
     padding: 0 0 50px 0;
-}
-
-#conteudo-total-secoes h2, p {
     text-align: center;
 }
 
@@ -118,13 +117,11 @@ span{
     width: 35%;
     background-color: #10772f9a;
     border: solid 1px #ffffff;
-    box-sizing: border-box;
     color: #ffffff;
     text-align: center;
     font-weight: bold;
     font-size: 100%;
 }
-
 
 #pousada-reservada-descricao p{
     color: #ffffff;
@@ -134,6 +131,20 @@ span{
 #pousada-reservada-descricao H2{
     font-weight: bold;
     font-size: 2em;
+}
+
+.secoes-descricao{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 6% 6% 0 6%;
+    background-color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+}
+
+.secoes-descricao h2{
+    font-size: 30px;
 }
 
 .div-img-quartos {
@@ -157,16 +168,6 @@ span{
     flex-direction: column;
 }
 
-.secoes-descricao{
-    padding: 6% 6% 0 6%;
-    background-color: #ffffff;
-    font-weight: normal;
-    text-align: center;
-}
-
-.secoes-descricao h2{
-    font-size: 30px;
-}
 
 .img-quartos {
     flex-direction: column;
@@ -203,20 +204,28 @@ iframe {
 
 .sobre-descricao-linha {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     min-height: 48%;
-    margin-bottom: 5%;
-    text-align: center;
+    width: 100%;
+    margin: 0 0 5% 0;
+}
+.sobre-descricao-linha p{
+    width: 100%;
 }
 
 .sobre-descricao-coluna {
+    display: flex;
     max-width: 48%;
+    flex-wrap: wrap;
+    gap: 20px;
+
 }
 
 .sobre-img {
     min-width: 30%;
-    max-width: 8%;
-    min-height: 100%;
+    max-width: 15%;
+    height: 100%;
     margin-left: 2%;
     object-fit: fill;
     padding: 0;
@@ -231,6 +240,7 @@ iframe {
 
 #rodape-contato {
     display: flex;
+    flex-flow: row wrap;
     color: #ffffff;
     justify-content: space-between;
     padding-bottom: 1%;
@@ -239,15 +249,23 @@ iframe {
 
 #rodape-contato div {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
 }
 
 #rodape-contato div a {
     color: #ffffff;
-    padding: 0 40px 0 20px;
-    margin: 0;
+    display: flex;
+    margin: 0 auto;
     box-sizing: border-box;
     width: 100%;
+
+}
+.rodape-contato-img-links{
+    flex: 1 0 300px;
+    flex-direction: row;
+    align-items: center;
 
 }
 #rodape-contato h3 {
