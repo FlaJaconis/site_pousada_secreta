@@ -1,9 +1,22 @@
-body {
+* {
     font-family: 'Source Sans Pro', sans-serif;
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
-    background-color: #233e49;
     box-sizing: border-box;
+}
+
+#container-principal{
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;  
+    box-shadow: 0px 2px 3px 3px #00000033;
+}
+
+header{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: max-content;
 }
 
 h1, h2, h3 {
@@ -49,33 +62,35 @@ span{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
     padding: 0 10%;
     background-color: #ffffff;
     position: fixed;
     box-sizing: border-box;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+    max-width: 1024px;  
+    width: 100%;
+    height: 60px;
+
 }
 
 .link-home {
     font-size: 24px;
-    flex: 1 0 60%;
+    width: 50%;
     margin: 0 15% 0 0;
 }
 
 .links-secoes {
     display: flex;
-    flex: 1 0 150px;    
     justify-content: space-between;
     padding: 0;
-   
+    width: max-content;
 }
 
 .links-secoes a {
     color: black;
     justify-content: right;
+    font-size: 1rem;
     padding: 0 10%;
 }
 
@@ -137,7 +152,6 @@ span{
     flex-direction: column;
     flex-wrap: wrap;
     padding: 6% 6% 0 6%;
-    background-color: #ffffff;
     font-weight: normal;
     text-align: center;
 }
@@ -174,8 +188,11 @@ span{
 }
 
 .rota {
-    padding-left: 0;
-    padding-right: 0;
+    width: 100%;
+}
+
+#div-iframe-rota{
+    width: 100%;
 }
 
 iframe {
@@ -191,6 +208,8 @@ iframe {
     padding: 3% 0 6% 0;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 410px;
+
 }
 
 .sobre-descricao h3, .sobre-descricao p {
@@ -205,25 +224,24 @@ iframe {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    min-height: 48%;
+    min-height: 18vh;
+    height: 20%;
     width: 100%;
     margin: 0 0 5% 0;
+
 }
-.sobre-descricao-linha p{
-    width: 100%;
+.sobre-descricao-linha div{
+    width: 50%;
 }
 
 .sobre-descricao-coluna {
     display: flex;
     max-width: 48%;
     flex-wrap: wrap;
-    gap: 20px;
-
 }
 
 .sobre-img {
-    min-width: 30%;
-    max-width: 15%;
+    width: 50%;
     height: 100%;
     margin-left: 2%;
     object-fit: fill;
@@ -235,6 +253,7 @@ iframe {
     padding: 30px 50px;
     display: flex;
     flex-flow: column wrap;
+    height: 27vh;
 }
 
 #rodape-contato {
@@ -251,42 +270,49 @@ iframe {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    padding-left: 20px;
+    justify-content: space-between;
 }
 
-#rodape-contato div a {
-    color: #ffffff;
-    display: flex;
-    margin: 0 auto;
-    box-sizing: border-box;
-    width: 100%;
 
-}
 .rodape-contato-img-links{
-    flex: 1 0 300px;
+    flex: 1 0 100px;
+    width: max-content;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
-
+    padding-bottom: 2%;
 }
+
 #rodape-contato h3 {
    font-weight: bold;
 }
 
 #rodape-contato div p {
     color: #ffffff;
-    padding: 0 40px 0 20px;
+    width: max-content;
 }
 
-#rodape-contato div img {
+#rodape-contato div a {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#rodape-contato a img {
     max-width: 50px;
     max-height: 50px;
     width: 100%;
     height: 100%;
+    margin: 0 10px;
+    
 }
 
 #rodape-copyright{
     width: 100%;
     text-align: center;
-    padding: 3% 0;
+    padding: 2% 0;
     height: 30px;
     box-sizing: border-box;
 }
